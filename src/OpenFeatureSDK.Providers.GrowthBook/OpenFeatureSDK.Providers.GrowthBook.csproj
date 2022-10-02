@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>OpenFeature.Providers.GrowthBook</RootNamespace>
+        <LangVersion>latest</LangVersion>
+        <PackageId>OpenFeature.Providers.GrowthBook</PackageId>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\OpenFeatureSDK.ServiceCollection\OpenFeatureSDK.ServiceCollection.csproj" />
+      <ProjectReference Include="..\OpenFeatureSDK\OpenFeatureSDK.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
+      <PackageReference Include="Refit" Version="6.3.2" />
+      <PackageReference Include="Refit.HttpClientFactory" Version="6.3.2" />
+    </ItemGroup>
+
+</Project>
